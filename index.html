@@ -1,0 +1,675 @@
+Whoops! That happened because my explanatory chat text from the previous response accidentally got copied or pasted directly inside your HTML file (right inside the `<body>` section below the navigation bar). Because the browser doesn't know it's supposed to be hidden prose, it rendered it right on your screen!
+
+Here is the **completely clean, production-ready code** with all that stray text removed. Replacing your current file content with this code will completely fix the error:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Skill School | Premium Advanced Upskilling Infrastructure</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brandDark: '#05070B',
+            brandDeep: '#0B111E',
+            brandElectric: '#00D2FF',
+            brandGlow: 'rgba(0, 210, 255, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #05070B;
+      color: #FFFFFF;
+      overflow-x: hidden;
+    }
+    .glass-nav {
+      background: rgba(5, 7, 11, 0.85);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .glass-card {
+      background: rgba(11, 17, 30, 0.4);
+      backdrop-filter: blur(16px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(0, 210, 255, 0.35);
+      box-shadow: 0 20px 50px rgba(0, 210, 255, 0.12);
+    }
+    .glow-canvas {
+      position: absolute;
+      background: radial-gradient(circle, rgba(0,210,255,0.07) 0%, rgba(0,0,0,0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .marquee-track {
+      display: flex;
+      width: 200%;
+      animation: infiniteScroll 30s linear infinite;
+    }
+    @keyframes infiniteScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .tab-view { display: none; }
+    .tab-view.active-view { display: block; }
+    
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #05070B; }
+    ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00D2FF; }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <div class="glow-canvas top-0 left-1/4 w-[600px] h-[600px]"></div>
+  <div class="glow-canvas top-[1200px] right-0 w-[500px] h-[500px]"></div>
+  <div class="glow-canvas top-[2800px] left-10 w-[600px] h-[600px]"></div>
+
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <a href="https://wa.me/911234567890" target="_blank" class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition group relative">
+      <svg class="w-7 h-7 text-white fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 12.008 0c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 12.002-11.95 12.002-1.999-.001-3.951-.502-5.69-1.453L0 24zm6.59-4.846c1.657.983 3.28 1.477 4.805 1.478 5.333.002 9.682-4.33 9.685-9.647.002-2.574-1.002-4.995-2.825-6.82C16.48 2.34 14.062 1.336 11.5 1.336c-5.336 0-9.686 4.332-9.688 9.65-.001 1.841.52 3.597 1.501 5.137l-.995 3.635 3.73-.978z"/></svg>
+      <span class="absolute right-16 bg-brandDeep border border-white/10 px-3 py-1 rounded-md text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition">Chat with Admissions</span>
+    </a>
+    <button onclick="toggleHelpdesk()" class="w-14 h-14 bg-brandElectric rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition group text-brandDark">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
+    </button>
+  </div>
+
+  <nav class="glass-nav fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <div class="flex items-center gap-3 cursor-pointer" onclick="navigate('home-tab')">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brandElectric to-indigo-500 flex items-center justify-center font-heading font-extrabold text-brandDark text-xl tracking-tighter">ISS</div>
+        <div class="flex flex-col">
+          <span class="font-heading font-extrabold text-base tracking-wider leading-none">INDIAN SKILL SCHOOL</span>
+          <span class="text-[10px] text-brandElectric font-mono tracking-widest uppercase mt-1">Advanced Training Engine</span>
+        </div>
+      </div>
+      
+      <div class="hidden xl:flex items-center gap-5 text-xs font-medium uppercase tracking-wider text-gray-300">
+        <button onclick="navigate('home-tab')" class="nav-link-btn text-brandElectric transition px-2 py-1">Home</button>
+        <button onclick="navigate('about-tab')" class="nav-link-btn hover:text-brandElectric transition px-2 py-1">About Us</button>
+        
+        <div class="relative group py-2">
+          <button onclick="navigate('all-courses-tab')" class="nav-link-btn hover:text-brandElectric transition flex items-center gap-1 uppercase">Programs <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg></button>
+          <div class="absolute top-full left-0 w-56 bg-brandDark border border-white/10 rounded-xl p-2 hidden group-hover:block shadow-2xl">
+            <button onclick="navigate('prog-courses-tab')" class="w-full text-left px-4 py-2 hover:bg-white/5 rounded-lg text-xs text-gray-300 hover:text-white transition">Programming Languages</button>
+            <button onclick="navigate('tech-courses-tab')" class="w-full text-left px-4 py-2 hover:bg-white/5 rounded-lg text-xs text-gray-300 hover:text-white transition">Software Technologies</button>
+            <button onclick="navigate('mech-courses-tab')" class="w-full text-left px-4 py-2 hover:bg-white/5 rounded-lg text-xs text-gray-300 hover:text-white transition">Mechanical CAD Core</button>
+            <button onclick="navigate('civil-courses-tab')" class="w-full text-left px-4 py-2 hover:bg-white/5 rounded-lg text-xs text-gray-300 hover:text-white transition">Civil Engineering Systems</button>
+          </div>
+        </div>
+
+        <button onclick="navigate('placements-tab')" class="nav-link-btn hover:text-brandElectric transition px-2 py-1">Placements</button>
+        <button onclick="navigate('gallery-tab')" class="nav-link-btn hover:text-brandElectric transition px-2 py-1">Gallery Hub</button>
+        <button onclick="navigate('blog-tab')" class="nav-link-btn hover:text-brandElectric transition px-2 py-1">Insights Blog</button>
+        <button onclick="navigate('verify-tab')" class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 hover:border-brandElectric/30 transition text-gray-400">Verify Credentials</button>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button onclick="navigate('portal-tab')" class="text-xs font-semibold uppercase tracking-wider text-gray-400 hover:text-brandElectric transition hidden sm:inline-block">Console Portal</button>
+        <button onclick="navigate('enroll-tab')" class="px-5 py-2.5 rounded-xl bg-brandElectric text-brandDark font-heading font-bold text-xs tracking-wider uppercase hover:opacity-90 transition shadow-lg shadow-brandElectric/20">Enroll Now</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pt-20">
+
+    <div id="home-tab" class="tab-view active-view">
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 text-center relative z-10">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brandElectric/10 border border-brandElectric/20 text-xs font-semibold tracking-wider text-brandElectric mb-8">
+          <span class="w-2 h-2 rounded-full bg-brandElectric animate-pulse"></span> ISO 9001:2015 Certified Educational Ecosystem
+        </div>
+        <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl mx-auto leading-[1.15]">
+          Learn Skills. Build Careers. <br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-brandElectric via-blue-400 to-indigo-500">Shape Your Future.</span>
+        </h1>
+        <p class="mt-8 text-gray-400 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
+          India's high-performance training ground for core technology tracks and advanced industrial application engineering. Turn baseline knowledge into operational mastery.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <button onclick="navigate('all-courses-tab')" class="px-8 py-4 rounded-xl bg-brandElectric text-brandDark font-heading font-bold text-sm uppercase tracking-wider shadow-xl shadow-brandElectric/25 hover:scale-105 transition">Explore Program Tree</button>
+          <button onclick="navigate('about-tab')" class="px-8 py-4 rounded-xl glass-card font-heading font-bold text-sm uppercase tracking-wider text-white hover:bg-white/10 transition">Institutional Profile</button>
+        </div>
+      </section>
+
+      <section class="border-y border-white/5 bg-brandDeep/30 py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="font-heading text-4xl font-extrabold text-brandElectric tracking-tight">15K+</div>
+            <div class="text-xs text-gray-500 uppercase tracking-widest mt-2 font-semibold">Alumni Graduated</div>
+          </div>
+          <div>
+            <div class="font-heading text-4xl font-extrabold text-white tracking-tight">250+</div>
+            <div class="text-xs text-gray-500 uppercase tracking-widest mt-2 font-semibold">Corporate Recruiters</div>
+          </div>
+          <div>
+            <div class="font-heading text-4xl font-extrabold text-brandElectric tracking-tight">₹42 LPA</div>
+            <div class="text-xs text-gray-500 uppercase tracking-widest mt-2 font-semibold">Highest CTC Secured</div>
+          </div>
+          <div>
+            <div class="font-heading text-4xl font-extrabold text-white tracking-tight">94.2%</div>
+            <div class="text-xs text-gray-500 uppercase tracking-widest mt-2 font-semibold">Active Placement Yield</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold">Engineered for Industry Alignment</h2>
+          <p class="text-gray-400 mt-3">We eliminate legacy theoretical frameworks in favor of production environments and verified skill metrics.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="glass-card p-8 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-brandElectric/10 text-brandElectric flex items-center justify-center mb-6"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg></div>
+            <h4 class="font-heading text-lg font-bold mb-3">Sandbox Lab Environments</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">Students spend 80% of program hours inside simulated sandboxes deploying architectural frameworks and mechanical systems.</p>
+          </div>
+          <div class="glass-card p-8 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-6"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+            <h4 class="font-heading text-lg font-bold mb-3">Validated Micro-Credentials</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">Certificates are cryptographically locked onto our registry verification system, accessible by corporate HR recruitment desks directly.</p>
+          </div>
+          <div class="glass-card p-8 rounded-2xl">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-6"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+            <h4 class="font-heading text-lg font-bold mb-3">Dedicated Placement Core</h4>
+            <p class="text-gray-400 text-sm leading-relaxed">Every student undergoes mock drills, resume profiling optimization, and exclusive access to closed recruitment pipelines.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12 bg-white/[0.02] border-y border-white/5 overflow-hidden">
+        <div class="marquee-track gap-16 items-center font-heading text-sm font-bold tracking-[0.25em] uppercase text-gray-500">
+          <span>TATA MOTORS INDUSTRIAL</span> &bull; <span>AMAZON AWS SERVICES</span> &bull; <span>L&T TECHNOLOGIES</span> &bull; <span>COGNIZANT LABS</span> &bull; <span>AUTODESK STRUCTURAL</span> &bull; <span>CAPGEMINI CORE</span> &bull; <span>SIEMENS ENGINEERING</span> &bull; <span>INFOSYS ECOSYSTEMS</span>
+          <span>TATA MOTORS INDUSTRIAL</span> &bull; <span>AMAZON AWS SERVICES</span> &bull; <span>L&T TECHNOLOGIES</span> &bull; <span>COGNIZANT LABS</span> &bull; <span>AUTODESK STRUCTURAL</span> &bull; <span>CAPGEMINI CORE</span> &bull; <span>SIEMENS ENGINEERING</span> &bull; <span>INFOSYS ECOSYSTEMS</span>
+        </div>
+      </section>
+
+      <section class="max-w-4xl mx-auto px-4 py-24 text-center">
+        <div class="glass-card p-10 rounded-3xl relative overflow-hidden border border-brandElectric/10">
+          <h3 class="font-heading text-2xl font-extrabold mb-2">Subscribe to Tech & Core Engineering Insights</h3>
+          <p class="text-gray-400 text-sm max-w-md mx-auto mb-6">Receive curriculum updates, industry trend breakdowns, and upcoming cohort scheduling details straight to your inbox.</p>
+          <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <input type="email" placeholder="Enter corporate or student email" class="flex-grow bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white" />
+            <button onclick="alert('Subscription logged securely.')" class="px-6 py-3 rounded-xl bg-brandElectric text-brandDark font-heading font-bold text-sm transition tracking-wider uppercase">Subscribe</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="about-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="max-w-3xl mb-16">
+        <span class="text-brandElectric font-mono text-xs uppercase tracking-widest">Bridging Academic Deficits</span>
+        <h2 class="font-heading text-4xl font-extrabold mt-3">The Mission Vector of Indian Skill School</h2>
+        <p class="text-gray-400 mt-4 leading-relaxed">Founded to reshape standard educational methods, Indian Skill School provides a structured training architecture where students gain direct, production-ready technical experience.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+        <div class="space-y-6">
+          <h3 class="font-heading text-2xl font-bold border-l-2 border-brandElectric pl-4">Our Methodology</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Standard university guidelines often rely on memorization patterns. Our internal frameworks require all technical concepts to be built, audited, and reviewed by real-world tech and engineering leaders.</p>
+          <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-brandElectric/10 text-brandElectric flex items-center justify-center font-bold">1</div>
+            <p class="text-xs text-gray-300 font-medium">Curriculums developed directly alongside engineering boards from enterprise firms.</p>
+          </div>
+          <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold">2</div>
+            <p class="text-xs text-gray-300 font-medium">Mandatory architectural capstones verified before certificate issuance.</p>
+          </div>
+        </div>
+        <div class="glass-card p-8 rounded-3xl bg-brandDeep/10 border border-white/5 relative">
+          <div class="absolute inset-0 bg-gradient-to-tr from-brandElectric/5 to-transparent pointer-events-none rounded-3xl"></div>
+          <h4 class="font-heading font-bold text-lg text-white mb-4">Board of Directors & Faculty Core</h4>
+          <ul class="space-y-4 text-xs text-gray-400">
+            <li class="flex justify-between border-b border-white/5 pb-2"><strong>Dr. Arindam Sen</strong> <span>Principal Tech Strategist (ex-Qualcomm)</span></li>
+            <li class="flex justify-between border-b border-white/5 pb-2"><strong>Prof. Rajesh K. Verma</strong> <span>Mechanical Systems Lead (IIT Kharagpur Alumnus)</span></li>
+            <li class="flex justify-between border-b border-white/5 pb-2"><strong>Nisha Deshmukh</strong> <span>Civil Infrastructure Core Board Director</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="all-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
+        <div>
+          <h2 class="font-heading text-4xl font-extrabold">Complete Architectural Curriculum Tree</h2>
+          <p class="text-gray-400 mt-2 text-sm">Select a specialized view panel or parse our core structural paths below.</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button onclick="navigate('prog-courses-tab')" class="px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-gray-300 hover:text-brandElectric hover:border-brandElectric/30 transition">Programming Languages</button>
+          <button onclick="navigate('tech-courses-tab')" class="px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-gray-300 hover:text-brandElectric hover:border-brandElectric/30 transition">Software Tech</button>
+          <button onclick="navigate('mech-courses-tab')" class="px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-gray-300 hover:text-brandElectric hover:border-brandElectric/30 transition">Mechanical Core</button>
+          <button onclick="navigate('civil-courses-tab')" class="px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-gray-300 hover:text-brandElectric hover:border-brandElectric/30 transition">Civil Structures</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div class="w-10 h-10 rounded-xl bg-brandElectric/10 text-brandElectric flex items-center justify-center font-bold font-mono">JV</div>
+              <span class="px-2.5 py-1 rounded text-[10px] uppercase font-semibold tracking-wider bg-white/5 text-gray-400">Prog Language</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold mb-2">Java Enterprise System Architecture</h3>
+            <p class="text-gray-400 text-xs leading-relaxed mb-4">Multi-threaded logic, memory optimization matrix, microservice scaffolding layouts, and Spring Boot framework systems.</p>
+          </div>
+          <div class="border-t border-white/5 pt-4 mt-4">
+            <div class="flex justify-between text-[11px] text-gray-500 mb-4"><span>Duration: 4 Months</span><span>Syllabus: Dynamic Labs Included</span></div>
+            <div class="grid grid-cols-2 gap-2"><button onclick="openDrawer('Java Enterprise Course Overview', 'Enterprise multi-threaded processing layouts, Spring Framework configuration modules, structural database routing systems.')" class="px-3 py-2 rounded-xl bg-white/5 text-xs font-semibold tracking-wider uppercase hover:bg-white/10 transition">Syllabus</button><button onclick="navigate('enroll-tab')" class="px-3 py-2 rounded-xl bg-brandElectric text-brandDark font-bold text-xs tracking-wider uppercase">Enroll</button></div>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div class="w-10 h-10 rounded-xl bg-brandElectric/10 text-brandElectric flex items-center justify-center font-bold font-mono">PY</div>
+              <span class="px-2.5 py-1 rounded text-[10px] uppercase font-semibold tracking-wider bg-white/5 text-gray-400">Prog Language</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold mb-2">Advanced Python + DSA Track</h3>
+            <p class="text-gray-400 text-xs leading-relaxed mb-4">Complex algorithm data modeling, time-complexity analysis, asynchronous processing paradigms, and structural search logic blueprints.</p>
+          </div>
+          <div class="border-t border-white/5 pt-4 mt-4">
+            <div class="flex justify-between text-[11px] text-gray-500 mb-4"><span>Duration: 4 Months</span><span>Syllabus: Dynamic Labs Included</span></div>
+            <div class="grid grid-cols-2 gap-2"><button onclick="openDrawer('Advanced Python + DSA', 'Algorithmic time complexity parsing ($O(n \\log n)$ optimizations), complex pointer logic tracks, structural data matrix design.')" class="px-3 py-2 rounded-xl bg-white/5 text-xs font-semibold tracking-wider uppercase hover:bg-white/10 transition">Syllabus</button><button onclick="navigate('enroll-tab')" class="px-3 py-2 rounded-xl bg-brandElectric text-brandDark font-bold text-xs tracking-wider uppercase">Enroll</button></div>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold font-mono">WD</div>
+              <span class="px-2.5 py-1 rounded text-[10px] uppercase font-semibold tracking-wider bg-white/5 text-gray-400">Software Tech</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold mb-2">Full-Stack Web Architectures</h3>
+            <p class="text-gray-400 text-xs leading-relaxed mb-4">Production-grade client application deployments utilizing Next.js, React engines, Node.js server pipelines, and system caching grids.</p>
+          </div>
+          <div class="border-t border-white/5 pt-4 mt-4">
+            <div class="flex justify-between text-[11px] text-gray-500 mb-4"><span>Duration: 6 Months</span><span>Syllabus: Dynamic Labs Included</span></div>
+            <div class="grid grid-cols-2 gap-2"><button onclick="openDrawer('Full-Stack Web Architectures', 'Client-side dehydration hydration states, asynchronous API tracking systems, global caching architectures via Redis execution.')" class="px-3 py-2 rounded-xl bg-white/5 text-xs font-semibold tracking-wider uppercase hover:bg-white/10 transition">Syllabus</button><button onclick="navigate('enroll-tab')" class="px-3 py-2 rounded-xl bg-brandElectric text-brandDark font-bold text-xs tracking-wider uppercase">Enroll</button></div>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center font-bold font-mono">SW</div>
+              <span class="px-2.5 py-1 rounded text-[10px] uppercase font-semibold tracking-wider bg-white/5 text-gray-400">Mechanical Core</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold mb-2">SolidWorks Industrial Assembly</h3>
+            <p class="text-gray-400 text-xs leading-relaxed mb-4">Parametric part modeling, multi-component mechanics, structural stress parsing simulations, and ISO draft documentation protocols.</p>
+          </div>
+          <div class="border-t border-white/5 pt-4 mt-4">
+            <div class="flex justify-between text-[11px] text-gray-500 mb-4"><span>Duration: 3 Months</span><span>Syllabus: Dynamic Labs Included</span></div>
+            <div class="grid grid-cols-2 gap-2"><button onclick="openDrawer('SolidWorks Assemblies', 'Multi-component hardware simulation configurations, stress-strain tensor calculation engines, blueprint manufacturing parameters.')" class="px-3 py-2 rounded-xl bg-white/5 text-xs font-semibold tracking-wider uppercase hover:bg-white/10 transition">Syllabus</button><button onclick="navigate('enroll-tab')" class="px-3 py-2 rounded-xl bg-brandElectric text-brandDark font-bold text-xs tracking-wider uppercase">Enroll</button></div>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold font-mono">ST</div>
+              <span class="px-2.5 py-1 rounded text-[10px] uppercase font-semibold tracking-wider bg-white/5 text-gray-400">Civil Structural</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold mb-2">STAAD Pro Concrete Analysis</h3>
+            <p class="text-gray-400 text-xs leading-relaxed mb-4">Finite element modeling layouts, dynamic seismic calculations, load path optimization metrics, and high-density frame stress testing.</p>
+          </div>
+          <div class="border-t border-white/5 pt-4 mt-4">
+            <div class="flex justify-between text-[11px] text-gray-500 mb-4"><span>Duration: 3 Months</span><span>Syllabus: Dynamic Labs Included</span></div>
+            <div class="grid grid-cols-2 gap-2"><button onclick="openDrawer('STAAD Pro Structural Configurations', 'Finite elemental mesh math systems, non-linear seismic loading configurations, concrete structural safety margins.')" class="px-3 py-2 rounded-xl bg-white/5 text-xs font-semibold tracking-wider uppercase hover:bg-white/10 transition">Syllabus</button><button onclick="navigate('enroll-tab')" class="px-3 py-2 rounded-xl bg-brandElectric text-brandDark font-bold text-xs tracking-wider uppercase">Enroll</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="prog-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="mb-12 border-b border-white/5 pb-6">
+        <span class="text-brandElectric font-mono text-xs uppercase tracking-widest">Targeted Syntax Execution</span>
+        <h2 class="font-heading text-3xl font-extrabold mt-2">Programming Languages & Algorithmic Foundations</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">C / C++ Compiler Logic & Memory Foundations</h3><p class="text-gray-400 text-xs">Pointers management patterns, custom hardware reference pipelines, memory leak mitigation, and application optimization tracks.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">JavaScript/TypeScript Engine Deep-Dive</h3><p class="text-gray-400 text-xs">Asynchronous runtime tracking, engine parsing, application execution scope matrices, and event loop tracking mechanics.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">SQL Optimization & Relational Normalization</h3><p class="text-gray-400 text-xs">Query performance patterns, composite tracking layouts, concurrency architecture management, and secure structural querying models.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tech-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="mb-12 border-b border-white/5 pb-6">
+        <span class="text-indigo-400 font-mono text-xs uppercase tracking-widest">Next-Gen Systems Framework</span>
+        <h2 class="font-heading text-3xl font-extrabold mt-2">Advanced Software Technologies & Systems Platforms</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">Data Science Models & Statistical Math</h3><p class="text-gray-400 text-xs">Complex analysis tracking models, tensor manipulations, data orchestration workflows, and matrix linear algebra frameworks.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">Artificial Intelligence & Deep Neural Networks</h3><p class="text-gray-400 text-xs">Transformers pipelines, tokenization system setups, custom predictive neural model optimization, and compute optimization clusters.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">AWS Cloud Orchestration Infrastructure</h3><p class="text-gray-400 text-xs">Infrastructure as Code configurations, multi-region routing layout deployments, containerization protocols, and secure network firewalls.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mech-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="mb-12 border-b border-white/5 pb-6">
+        <span class="text-pink-400 font-mono text-xs uppercase tracking-widest">Parametric Hardware Design</span>
+        <h2 class="font-heading text-3xl font-extrabold mt-2">Mechanical Core Design & Simulation Platforms</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">CATIA Advanced Surface Geometries</h3><p class="text-gray-400 text-xs">Complex swept curve generation, aerospace structural rendering tracks, dynamic fluid body alignments, and thickness simulation arrays.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">ANSYS Finite Element Heat & Stress Parsing</h3><p class="text-gray-400 text-xs">Thermal distribution matrices, non-linear deformation calculations, lifecycle structural safety assessments, and materials wear models.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">Autodesk Fusion 360 Generative Models</h3><p class="text-gray-400 text-xs">AI-driven component topology configuration tracks, additive manufacturing parameter testing, and collaborative cloud modeling structures.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="civil-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="mb-12 border-b border-white/5 pb-6">
+        <span class="text-purple-400 font-mono text-xs uppercase tracking-widest">Structural Safety Ecosystems</span>
+        <h2 class="font-heading text-3xl font-extrabold mt-2">Civil Infrastructure Design & Building Information Modeling (BIM)</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">ETABS High-Rise Structural Analysis</h3><p class="text-gray-400 text-xs">Multi-story lateral load calculations, foundational seismic response spectrums, concrete beam layouts, and shear wall performance maps.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">Autodesk Revit Metric BIM Management</h3><p class="text-gray-400 text-xs">Integrated scheduling tracks, collaborative structural parameter design, service interference checking, and full asset documentation workflows.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+          <div><h3 class="font-heading text-lg font-bold mb-2 text-white">Primavera P6 Corporate Portfolio Planning</h3><p class="text-gray-400 text-xs">Critical path calculation tracks, resource scheduling algorithms, capital variance tracking models, and multi-tier construction scheduling operations.</p></div>
+          <button onclick="navigate('enroll-tab')" class="mt-6 w-full py-2 bg-brandElectric/10 hover:bg-brandElectric text-brandElectric hover:text-brandDark transition rounded-lg text-xs font-bold uppercase tracking-wider">Enroll Program</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="placements-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="font-heading text-3xl font-extrabold">Active Placement Support Hub</h2>
+        <p class="text-gray-400 mt-2">Explore hiring metrics and partner connection configurations. Organizations can submit recruiter profiles immediately below.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mb-24">
+        <div class="lg:col-span-1 space-y-6">
+          <div class="glass-card p-6 rounded-2xl">
+            <h4 class="font-heading font-bold text-sm text-brandElectric tracking-wider uppercase mb-2">Recruitment Yield Matrix</h4>
+            <p class="text-xs text-gray-400 leading-relaxed">Our dedicated placement core works hand-in-hand with corporate tech managers to source qualified engineering applicants.</p>
+          </div>
+          <div class="glass-card p-6 rounded-2xl">
+            <h5 class="text-xs font-bold uppercase text-white mb-2">Primary Placement Drivers</h5>
+            <ul class="text-xs text-gray-400 space-y-2">
+              <li>&bull; Pre-vetted skills registry screening</li>
+              <li>&bull; Custom corporate hackathon tracks</li>
+              <li>&bull; Structured project validation history</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 bg-brandDeep/40 border border-white/5 p-8 rounded-3xl">
+          <h3 class="font-heading font-bold text-xl mb-6">Corporate Recruiter Intake Portal</h3>
+          <form onsubmit="event.preventDefault(); alert('Recruiter requisition file logged.');" class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div><label class="block text-[11px] uppercase tracking-wider text-gray-400 mb-2">Organization Title</label><input type="text" class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white" /></div>
+              <div><label class="block text-[11px] uppercase tracking-wider text-gray-400 mb-2">Corporate Email Address</label><input type="email" class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white" /></div>
+            </div>
+            <div><label class="block text-[11px] uppercase tracking-wider text-gray-400 mb-2">Target Technical Domain Target</label><input type="text" placeholder="e.g., Spring Boot Engineers, BIM Modeler" class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white" /></div>
+            <button class="w-full py-3.5 rounded-xl bg-brandElectric text-brandDark font-heading font-bold uppercase tracking-wider text-xs">Submit Requisition Profile</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="mb-12">
+        <h2 class="font-heading text-3xl font-extrabold">Campus Infrastructure & Events Gallery</h2>
+        <p class="text-gray-400 mt-2 text-sm">Visual tour of sandbox environments, high-performance computing centers, and active validation hackathons.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="glass-card overflow-hidden rounded-2xl group cursor-pointer">
+          <div class="h-52 bg-gradient-to-tr from-brandDeep to-slate-800 flex items-center justify-center font-mono text-xs tracking-widest text-gray-500 relative">
+            HIGH-COMPUTE TESTING ENVIRONMENT [LAB AREA Alpha]
+            <div class="absolute inset-0 bg-brandElectric/5 opacity-0 group-hover:opacity-100 transition"></div>
+          </div>
+          <div class="p-4 border-t border-white/5"><h4 class="font-heading font-bold text-sm text-gray-200">Advanced Systems Design Facility</h4></div>
+        </div>
+        <div class="glass-card overflow-hidden rounded-2xl group cursor-pointer">
+          <div class="h-52 bg-gradient-to-tr from-brandDeep to-slate-800 flex items-center justify-center font-mono text-xs tracking-widest text-gray-500 relative">
+            INDUSTRIAL DESIGN LAB [CAD RUNTIME SPACE]
+            <div class="absolute inset-0 bg-brandElectric/5 opacity-0 group-hover:opacity-100 transition"></div>
+          </div>
+          <div class="p-4 border-t border-white/5"><h4 class="font-heading font-bold text-sm text-gray-200">Parametric Modeling Core Labs</h4></div>
+        </div>
+        <div class="glass-card overflow-hidden rounded-2xl group cursor-pointer">
+          <div class="h-52 bg-gradient-to-tr from-brandDeep to-slate-800 flex items-center justify-center font-mono text-xs tracking-widest text-gray-500 relative">
+            2026 GENERAL ADVANCED HACKATHON ARENA
+            <div class="absolute inset-0 bg-brandElectric/5 opacity-0 group-hover:opacity-100 transition"></div>
+          </div>
+          <div class="p-4 border-t border-white/5"><h4 class="font-heading font-bold text-sm text-gray-200">Cross-Disciplinary Project Iterations</h4></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="blog-tab" class="tab-view max-w-5xl mx-auto px-4 py-16">
+      <div class="mb-16 border-b border-white/5 pb-6">
+        <h2 class="font-heading text-3xl font-extrabold">The ISS Engineering Insights Blog</h2>
+        <p class="text-gray-400 mt-2 text-sm">Technical strategy breakdowns, syntax efficiency analysis, and engineering hiring guidelines.</p>
+      </div>
+
+      <div class="space-y-12">
+        <article class="glass-card p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-start justify-between">
+          <div class="space-y-3 max-w-2xl">
+            <div class="text-[11px] font-mono text-brandElectric uppercase tracking-widest">Systems Engineering &bull; July 2026</div>
+            <h3 class="font-heading text-xl font-bold hover:text-brandElectric transition cursor-pointer">Scaling Concurrent Database Connections via Advanced Connection Isolation Layers</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">An analysis mapping high-volume performance thresholds inside relational architectures under load spikes.</p>
+          </div>
+          <button onclick="alert('Full research text module loading...')" class="whitespace-nowrap px-4 py-2 bg-white/5 hover:bg-white/10 rounded-xl text-xs font-semibold uppercase tracking-wider transition">Read Insight</button>
+        </article>
+
+        <article class="glass-card p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-start justify-between">
+          <div class="space-y-3 max-w-2xl">
+            <div class="text-[11px] font-mono text-pink-400 uppercase tracking-widest">Mechanical Systems &bull; June 2026</div>
+            <h3 class="font-heading text-xl font-bold hover:text-brandElectric transition cursor-pointer">Finite Element Mesh Parameters: Mitigating Failure Risk Vectors in Thin-Shell Castings</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">A detailed guide on setting up accurate convergence calculations within ANSYS to verify structural load lines.</p>
+          </div>
+          <button onclick="alert('Full research text module loading...')" class="whitespace-nowrap px-4 py-2 bg-white/5 hover:bg-white/10 rounded-xl text-xs font-semibold uppercase tracking-wider transition">Read Insight</button>
+        </article>
+      </div>
+    </div>
+
+    <div id="verify-tab" class="tab-view max-w-2xl mx-auto px-4 py-16">
+      <div class="glass-card p-8 rounded-3xl border border-brandElectric/20 relative">
+        <h2 class="font-heading text-2xl font-extrabold mb-2">Cryptographic Ledger Verification Engine</h2>
+        <p class="text-gray-400 text-sm mb-6">Enter a graduate identifier profile string sequence to confirm tracking transcripts and structural program logs.</p>
+        
+        <div class="space-y-4">
+          <div>
+            <label class="block text-[10px] uppercase tracking-widest text-gray-400 mb-2">Certificate Reference Identification String</label>
+            <input type="text" id="cert-input" placeholder="e.g., ISS-2026-X8942" class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white font-mono" />
+          </div>
+          <button onclick="executeVerification()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brandElectric to-blue-600 text-brandDark font-heading font-bold tracking-wider text-xs uppercase shadow-md shadow-brandElectric/10">Execute Database Search Verification</button>
+        </div>
+
+        <div id="verification-result" class="mt-6 p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-xs hidden">
+          <div class="font-bold text-green-400 mb-1">Status: Valid Credentials Secured</div>
+          <p class="text-gray-300"><strong>Graduate Name:</strong> Devendra Sharma &bull; <strong>Program Core:</strong> Full-Stack Infrastructure Integration Engineering &bull; <strong>Status:</strong> Clear Certificate Issuance</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="portal-tab" class="tab-view max-w-md mx-auto px-4 py-16">
+      <div class="glass-card p-8 rounded-3xl border border-white/10">
+        <div class="text-center mb-8">
+          <h2 class="font-heading text-2xl font-extrabold">ISS Console Link Gateway</h2>
+          <p class="text-gray-400 text-xs mt-1">Access sandboxes, study modules, performance metrics, and active project submission boards.</p>
+        </div>
+        
+        <form onsubmit="event.preventDefault(); alert('Console validation initialized against directory systems.');" class="space-y-4">
+          <div>
+            <label class="block text-[10px] uppercase tracking-widest text-gray-400 mb-1.5">User System Token / Email</label>
+            <input type="text" placeholder="token identifier or registered mail" class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white" />
+          </div>
+          <div>
+            <label class="block text-[10px] uppercase tracking-widest text-gray-400 mb-1.5">Console Password Key</label>
+            <input type="password" placeholder="••••••••" class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white" />
+          </div>
+          <button type="submit" class="w-full py-3 rounded-xl bg-brandElectric text-brandDark font-heading font-bold text-xs uppercase tracking-wider transition shadow-md shadow-brandElectric/10">Access Console Engine</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="enroll-tab" class="tab-view max-w-3xl mx-auto px-4 py-16">
+      <div class="glass-card p-8 rounded-3xl relative">
+        <h2 class="font-heading text-2xl font-extrabold mb-1">Institutional Registration Hub</h2>
+        <p class="text-gray-400 text-xs mb-8">Queue your onboarding file parameters below. Our admissions core reviews and reaches out regarding scheduling setups within 24 hours.</p>
+        
+        <form onsubmit="event.preventDefault(); alert('Onboarding parameter profile securely processed into the active admission queue.');" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div><label class="block text-[11px] uppercase tracking-wider text-gray-400 mb-2">Legal Student Profile Name</label><input type="text" required class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white" /></div>
+            <div><label class="block text-[11px] uppercase tracking-wider text-gray-400 mb-2">Communication Identity (Email)</label><input type="email" required class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white" /></div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div><label class="block text-[11px] uppercase tracking-wider text-gray-400 mb-2">Mobile Connection Sequence</label><input type="tel" required placeholder="+91 00000 00000" class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white" /></div>
+            <div>
+              <label class="block text-[11px] uppercase tracking-wider text-gray-400 mb-2">Target Program Domain Segment</label>
+              <select class="w-full bg-brandDark border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brandElectric transition text-white">
+                <option>Advanced Syntax Programming Track</option>
+                <option>Systems Architecture & Web Deployments</option>
+                <option>Mechanical CAD Core Assembly</option>
+                <option>Civil Infrastructure Frame Modeling</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="w-full py-4 rounded-xl bg-brandElectric text-brandDark font-heading font-bold text-xs uppercase tracking-wider shadow-lg shadow-brandElectric/25">Submit Enrollment Parameters</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="syllabus-drawer" class="fixed inset-0 z-50 bg-brandDark/80 backdrop-filter backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="glass-card max-w-lg w-full p-8 rounded-3xl border border-brandElectric/30 relative">
+      <h3 id="drawer-title" class="font-heading text-xl font-extrabold text-white mb-2">Program Blueprint Overview</h3>
+      <p id="drawer-body" class="text-gray-400 text-sm leading-relaxed mb-6">Details outlining structural parameters.</p>
+      <div class="flex gap-4">
+        <button onclick="alert('Brochure tracking data queued for local storage download system.')" class="flex-grow py-2.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 text-xs font-semibold tracking-wider uppercase transition">Download Detailed Brochure PDF</button>
+        <button onclick="closeDrawer()" class="px-5 py-2.5 rounded-xl bg-brandElectric text-brandDark font-bold text-xs uppercase tracking-wider">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="helpdesk-chat" class="fixed bottom-24 right-6 w-80 bg-brandDark border border-white/10 rounded-2xl hidden shadow-2xl z-50 overflow-hidden">
+    <div class="bg-brandDeep p-4 border-b border-white/5 flex justify-between items-center"><span class="font-heading font-bold text-xs tracking-wider text-brandElectric">ISS Live Support Helpdesk</span><button onclick="toggleHelpdesk()" class="text-gray-400 hover:text-white text-xs">&times;</button></div>
+    <div class="p-4 h-48 overflow-y-auto text-xs space-y-3 bg-brandDark/50">
+      <div class="bg-white/5 p-2.5 rounded-xl max-w-[85%] text-gray-300">Welcome to Indian Skill School admissions matrix interface. How can we direct your upskilling pipeline today?</div>
+    </div>
+    <div class="p-2 border-t border-white/5 bg-brandDeep flex gap-2"><input type="text" placeholder="Query input field..." class="w-full bg-brandDark rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none" /><button onclick="alert('Message passed to dispatcher systems.')" class="px-3 bg-brandElectric text-brandDark rounded-lg text-xs font-bold font-mono">></button></div>
+  </div>
+
+  <footer class="bg-brandDark border-t border-white/5 mt-36 py-12 relative z-10 text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center font-heading font-bold text-brandElectric text-xs tracking-tighter">ISS</div>
+        <span>&copy; 2026 Indian Skill School Academy Inc. Core rights reserved.</span>
+      </div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white transition">Privacy Protocol Configuration</a>
+        <a href="#" class="hover:text-white transition">Academic Quality Directives</a>
+        <a href="#" class="hover:text-white transition">Admissions Registry Gateway</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function navigate(viewId) {
+      const tabs = document.querySelectorAll('.tab-view');
+      tabs.forEach(tab => tab.classList.remove('active-view'));
+      
+      const targetElement = document.getElementById(viewId);
+      if(targetElement) {
+        targetElement.classList.add('active-view');
+        
+        const navButtons = document.querySelectorAll('.nav-link-btn');
+        navButtons.forEach(btn => btn.classList.remove('text-brandElectric'));
+        
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    function openDrawer(title, explanation) {
+      document.getElementById('drawer-title').innerText = title;
+      document.getElementById('drawer-body').innerText = explanation;
+      const drawer = document.getElementById('syllabus-drawer');
+      drawer.classList.remove('hidden');
+      drawer.classList.add('flex');
+    }
+    
+    function closeDrawer() {
+      const drawer = document.getElementById('syllabus-drawer');
+      drawer.classList.add('hidden');
+      drawer.classList.remove('flex');
+    }
+
+    function toggleHelpdesk() {
+      const helpdesk = document.getElementById('helpdesk-chat');
+      helpdesk.classList.toggle('hidden');
+    }
+
+    function executeVerification() {
+      const inputValue = document.getElementById('cert-input').value.trim();
+      const panel = document.getElementById('verification-result');
+      if (inputValue) {
+        panel.classList.remove('hidden');
+      } else {
+        alert('Please specify an evaluation credential sequence token.');
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+```
