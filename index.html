@@ -1,6 +1,6 @@
-Whoops! That happened because my explanatory chat text from the previous response accidentally got copied or pasted directly inside your HTML file (right inside the `<body>` section below the navigation bar). Because the browser doesn't know it's supposed to be hidden prose, it rendered it right on your screen!
+Here is the complete, updated code. I have replaced the simple single-line footer visible in your screenshot with a robust, **multi-column enterprise footer**.
 
-Here is the **completely clean, production-ready code** with all that stray text removed. Replacing your current file content with this code will completely fix the error:
+It contains categorized navigation links that map directly to your dynamic sub-tabs (`Programs`, `Institutional`, and `Portals`), complete with descriptions, contact data points, and hover states to give it a highly polished, professional finish.
 
 ```html
 <!DOCTYPE html>
@@ -10,8 +10,10 @@ Here is the **completely clean, production-ready code** with all that stray text
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Indian Skill School | Premium Advanced Upskilling Infrastructure</title>
   
+  <!-- Tailwind Engine -->
   <script src="https://cdn.tailwindcss.com"></script>
   
+  <!-- Typography Profiles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -83,10 +85,12 @@ Here is the **completely clean, production-ready code** with all that stray text
 </head>
 <body class="font-sans antialiased">
 
+  <!-- Background Ambience Network -->
   <div class="glow-canvas top-0 left-1/4 w-[600px] h-[600px]"></div>
   <div class="glow-canvas top-[1200px] right-0 w-[500px] h-[500px]"></div>
   <div class="glow-canvas top-[2800px] left-10 w-[600px] h-[600px]"></div>
 
+  <!-- FLOATING INTERACTIVE ACTIONS LAYER -->
   <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
     <a href="https://wa.me/911234567890" target="_blank" class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition group relative">
       <svg class="w-7 h-7 text-white fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 12.008 0c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 12.002-11.95 12.002-1.999-.001-3.951-.502-5.69-1.453L0 24zm6.59-4.846c1.657.983 3.28 1.477 4.805 1.478 5.333.002 9.682-4.33 9.685-9.647.002-2.574-1.002-4.995-2.825-6.82C16.48 2.34 14.062 1.336 11.5 1.336c-5.336 0-9.686 4.332-9.688 9.65-.001 1.841.52 3.597 1.501 5.137l-.995 3.635 3.73-.978z"/></svg>
@@ -97,6 +101,7 @@ Here is the **completely clean, production-ready code** with all that stray text
     </button>
   </div>
 
+  <!-- FIXED NAVIGATION BAR -->
   <nav class="glass-nav fixed top-0 left-0 right-0 z-50">
     <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
@@ -135,8 +140,10 @@ Here is the **completely clean, production-ready code** with all that stray text
     </div>
   </nav>
 
+  <!-- CONTENT CONTAINER -->
   <div class="pt-20">
 
+    <!-- ================= SUBTAB 1: HOMEPAGE ENGINE ================= -->
     <div id="home-tab" class="tab-view active-view">
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 text-center relative z-10">
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brandElectric/10 border border-brandElectric/20 text-xs font-semibold tracking-wider text-brandElectric mb-8">
@@ -218,6 +225,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </section>
     </div>
 
+    <!-- ================= SUBTAB 2: ABOUT US OVERVIEW ================= -->
     <div id="about-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="max-w-3xl mb-16">
         <span class="text-brandElectric font-mono text-xs uppercase tracking-widest">Bridging Academic Deficits</span>
@@ -250,6 +258,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 3: THE COMPREHENSIVE ALL COURSES CORE ================= -->
     <div id="all-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
         <div>
@@ -342,6 +351,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 4: PROGRAMMING LANGUAGES CATEGORY ================= -->
     <div id="prog-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="mb-12 border-b border-white/5 pb-6">
         <span class="text-brandElectric font-mono text-xs uppercase tracking-widest">Targeted Syntax Execution</span>
@@ -363,6 +373,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 5: SOFTWARE TECHNOLOGIES CATEGORY ================= -->
     <div id="tech-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="mb-12 border-b border-white/5 pb-6">
         <span class="text-indigo-400 font-mono text-xs uppercase tracking-widest">Next-Gen Systems Framework</span>
@@ -384,6 +395,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 6: MECHANICAL CAD CORE CATEGORY ================= -->
     <div id="mech-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="mb-12 border-b border-white/5 pb-6">
         <span class="text-pink-400 font-mono text-xs uppercase tracking-widest">Parametric Hardware Design</span>
@@ -405,6 +417,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 7: CIVIL ENGINEERING SOFTWARE ================= -->
     <div id="civil-courses-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="mb-12 border-b border-white/5 pb-6">
         <span class="text-purple-400 font-mono text-xs uppercase tracking-widest">Structural Safety Ecosystems</span>
@@ -426,6 +439,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 8: PLACEMENTS CORNER LAYER ================= -->
     <div id="placements-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="font-heading text-3xl font-extrabold">Active Placement Support Hub</h2>
@@ -462,6 +476,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 9: CAMPUS & EVENTS GALLERY ================= -->
     <div id="gallery-tab" class="tab-view max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="mb-12">
         <h2 class="font-heading text-3xl font-extrabold">Campus Infrastructure & Events Gallery</h2>
@@ -493,6 +508,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 10: INSIGHTS BLOG ENGINE ================= -->
     <div id="blog-tab" class="tab-view max-w-5xl mx-auto px-4 py-16">
       <div class="mb-16 border-b border-white/5 pb-6">
         <h2 class="font-heading text-3xl font-extrabold">The ISS Engineering Insights Blog</h2>
@@ -520,6 +536,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 11: SYSTEM CREDENTIALS VALIDATION ================= -->
     <div id="verify-tab" class="tab-view max-w-2xl mx-auto px-4 py-16">
       <div class="glass-card p-8 rounded-3xl border border-brandElectric/20 relative">
         <h2 class="font-heading text-2xl font-extrabold mb-2">Cryptographic Ledger Verification Engine</h2>
@@ -540,6 +557,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 12: STUDENT LOGIN PORTAL ================= -->
     <div id="portal-tab" class="tab-view max-w-md mx-auto px-4 py-16">
       <div class="glass-card p-8 rounded-3xl border border-white/10">
         <div class="text-center mb-8">
@@ -561,6 +579,7 @@ Here is the **completely clean, production-ready code** with all that stray text
       </div>
     </div>
 
+    <!-- ================= SUBTAB 13: ONBOARDING ADMISSIONS ENROLLMENT ================= -->
     <div id="enroll-tab" class="tab-view max-w-3xl mx-auto px-4 py-16">
       <div class="glass-card p-8 rounded-3xl relative">
         <h2 class="font-heading text-2xl font-extrabold mb-1">Institutional Registration Hub</h2>
@@ -590,6 +609,7 @@ Here is the **completely clean, production-ready code** with all that stray text
 
   </div>
 
+  <!-- INTERACTIVE SYLLABUS DRAWER LAYER -->
   <div id="syllabus-drawer" class="fixed inset-0 z-50 bg-brandDark/80 backdrop-filter backdrop-blur-md hidden items-center justify-center p-4">
     <div class="glass-card max-w-lg w-full p-8 rounded-3xl border border-brandElectric/30 relative">
       <h3 id="drawer-title" class="font-heading text-xl font-extrabold text-white mb-2">Program Blueprint Overview</h3>
@@ -601,6 +621,7 @@ Here is the **completely clean, production-ready code** with all that stray text
     </div>
   </div>
 
+  <!-- SIMULATED CHATBOT HELPDESK LAYER -->
   <div id="helpdesk-chat" class="fixed bottom-24 right-6 w-80 bg-brandDark border border-white/10 rounded-2xl hidden shadow-2xl z-50 overflow-hidden">
     <div class="bg-brandDeep p-4 border-b border-white/5 flex justify-between items-center"><span class="font-heading font-bold text-xs tracking-wider text-brandElectric">ISS Live Support Helpdesk</span><button onclick="toggleHelpdesk()" class="text-gray-400 hover:text-white text-xs">&times;</button></div>
     <div class="p-4 h-48 overflow-y-auto text-xs space-y-3 bg-brandDark/50">
@@ -609,20 +630,78 @@ Here is the **completely clean, production-ready code** with all that stray text
     <div class="p-2 border-t border-white/5 bg-brandDeep flex gap-2"><input type="text" placeholder="Query input field..." class="w-full bg-brandDark rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none" /><button onclick="alert('Message passed to dispatcher systems.')" class="px-3 bg-brandElectric text-brandDark rounded-lg text-xs font-bold font-mono">></button></div>
   </div>
 
-  <footer class="bg-brandDark border-t border-white/5 mt-36 py-12 relative z-10 text-xs text-gray-500">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
-      <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center font-heading font-bold text-brandElectric text-xs tracking-tighter">ISS</div>
-        <span>&copy; 2026 Indian Skill School Academy Inc. Core rights reserved.</span>
+  <!-- ENRICHED MULTI-COLUMN ENTERPRISE FOOTER -->
+  <footer class="bg-[#030508] border-t border-white/5 mt-36 relative z-10 text-gray-400">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Column 1: Institutional Core Bio -->
+        <div class="lg:col-span-2 space-y-5">
+          <div class="flex items-center gap-3 cursor-pointer" onclick="navigate('home-tab')">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brandElectric to-indigo-500 flex items-center justify-center font-heading font-extrabold text-brandDark text-lg tracking-tighter">ISS</div>
+            <span class="font-heading font-extrabold text-sm tracking-wider text-white">INDIAN SKILL SCHOOL</span>
+          </div>
+          <p class="text-xs leading-relaxed max-w-sm text-gray-500">
+            A high-performance technical ecosystem delivering outcome-oriented training pathways in enterprise programming, system architectures, parametric CAD modeling, and civil structural analysis metrics.
+          </p>
+          <div class="text-[11px] font-mono text-gray-500 space-y-1">
+            <div>Corporate Identification: ISS-EDU-2026-HQ</div>
+            <div>Central Support: admissions@indianskillschool.edu.in</div>
+          </div>
+        </div>
+
+        <!-- Column 2: Specialized Curriculum Sub-tabs -->
+        <div class="space-y-4">
+          <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-white">Academic Tracks</h4>
+          <ul class="text-xs space-y-2.5 font-medium">
+            <li><button onclick="navigate('prog-courses-tab')" class="hover:text-brandElectric transition text-left">Programming Languages</button></li>
+            <li><button onclick="navigate('tech-courses-tab')" class="hover:text-brandElectric transition text-left">Software Technologies</button></li>
+            <li><button onclick="navigate('mech-courses-tab')" class="hover:text-brandElectric transition text-left">Mechanical CAD Systems</button></li>
+            <li><button onclick="navigate('civil-courses-tab')" class="hover:text-brandElectric transition text-left">Civil Infrastructure Core</button></li>
+            <li><button onclick="navigate('all-courses-tab')" class="text-brandElectric hover:underline font-semibold transition text-left">Complete Program Tree &rarr;</button></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Institutional Sub-tabs -->
+        <div class="space-y-4">
+          <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-white">Institutional Units</h4>
+          <ul class="text-xs space-y-2.5 font-medium">
+            <li><button onclick="navigate('about-tab')" class="hover:text-brandElectric transition text-left">About Institutional Mission</button></li>
+            <li><button onclick="navigate('placements-tab')" class="hover:text-brandElectric transition text-left">Placement & Recruitment Yield</button></li>
+            <li><button onclick="navigate('gallery-tab')" class="hover:text-brandElectric transition text-left">Campus Infrastructure Hub</button></li>
+            <li><button onclick="navigate('blog-tab')" class="hover:text-brandElectric transition text-left">Engineering Insights Blog</button></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: System Gateways & Onboarding -->
+        <div class="space-y-4">
+          <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-white">Secure Gateways</h4>
+          <ul class="text-xs space-y-2.5 font-medium">
+            <li><button onclick="navigate('verify-tab')" class="hover:text-brandElectric transition text-left text-brandElectric font-semibold">Verify Graduate Credentials</button></li>
+            <li><button onclick="navigate('portal-tab')" class="hover:text-brandElectric transition text-left">Console Portal Link</button></li>
+            <li><button onclick="navigate('enroll-tab')" class="hover:text-brandElectric transition text-left">Cohort Admission Enrollment</button></li>
+            <li><button onclick="toggleHelpdesk()" class="hover:text-brandElectric transition text-left">Interactive Support Helpdesk</button></li>
+          </ul>
+        </div>
+
       </div>
-      <div class="flex gap-6">
-        <a href="#" class="hover:text-white transition">Privacy Protocol Configuration</a>
-        <a href="#" class="hover:text-white transition">Academic Quality Directives</a>
-        <a href="#" class="hover:text-white transition">Admissions Registry Gateway</a>
+
+      <!-- Footer Bottom Bar Separator -->
+      <div class="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-[11px] text-gray-500">
+        <div class="flex items-center gap-2 font-mono">
+          <span>&copy; 2026 Indian Skill School Academy Inc. Core rights reserved.</span>
+        </div>
+        <div class="flex flex-wrap gap-x-6 gap-y-2 justify-center">
+          <a href="#" class="hover:text-white transition">Privacy Protocol Configuration</a>
+          <a href="#" class="hover:text-white transition">Academic Quality Directives</a>
+          <a href="#" class="hover:text-white transition">Admissions Registry Gateway</a>
+          <a href="#" class="hover:text-white transition">Terms of Evaluation System</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- PLATFORM ACTION ROUTING CONTROLLERS -->
   <script>
     function navigate(viewId) {
       const tabs = document.querySelectorAll('.tab-view');
